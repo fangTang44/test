@@ -22,9 +22,9 @@ int c_socket() {
   struct sockaddr_in saddr;
   bzero(&saddr, sizeof(saddr));
   saddr.sin_family = AF_INET;
-  saddr.sin_port = htons(6000);
+  saddr.sin_port = htons(9006);
   // saddr.sin_addr.s_addr = inet_addr("192.168.31.173");
-  saddr.sin_addr.s_addr = inet_addr("127.0.0.1");
+  saddr.sin_addr.s_addr = inet_addr("0.0.0.0");
 
   int res = bind(sockfd, (struct sockaddr *)&saddr, sizeof(saddr));
   assert(res != -1);
