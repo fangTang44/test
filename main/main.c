@@ -19,11 +19,11 @@ int main() {
       break;
     }
     case 2: {
-      // mangerReader();
+      mangerReader(mysql);
       break;
     }
     case 3: {
-      // borrowReturnManger();
+      borrowReturnManger(mysql);
       break;
     }
     default: {
